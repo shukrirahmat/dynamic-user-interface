@@ -1,19 +1,10 @@
 import "./styles.css";
+import {setUpClickDropdown, setUpHoverDropdown} from "./setUpDropdown";
 
-const dropdowncontent = document.querySelector(".dropdowncontent");
-const dropdownbutton = document.querySelector(".dropdownbutton");
+const dropdownClick = document.querySelector("#forclick");
+const dropdownClickContent = document.querySelector("#clickcontent");
+const dropdownHover = document.querySelector("#forhover");
+const dropdownHoverContent = document.querySelector("#hovercontent");
 
-const toggleDropDown = function () {
-  dropdowncontent.classList.toggle("show");
-};
-
-dropdownbutton.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleDropDown();
-});
-
-document.documentElement.addEventListener("click", () => {
-  if (dropdowncontent.classList.contains("show")) {
-    toggleDropDown();
-  }
-});
+setUpClickDropdown(dropdownClick, dropdownClickContent, "show");
+setUpHoverDropdown(dropdownHover, dropdownHoverContent, "show");
