@@ -1,4 +1,6 @@
 import "./styles.css";
+import "./index.html";
+
 import {setUpClickDropdown, setUpHoverDropdown} from "./setUpDropdown";
 
 const dropdownClick = document.querySelector("#forclick");
@@ -8,3 +10,4 @@ const dropdownHoverContent = document.querySelector("#hovercontent");
 
 setUpClickDropdown(dropdownClick, dropdownClickContent, "show");
 setUpHoverDropdown(dropdownHover, dropdownHoverContent, "show");
+
