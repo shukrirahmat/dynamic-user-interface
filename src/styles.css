@@ -73,6 +73,7 @@ body {
   text-align: center;
   padding: 25px 0;
   font-size: 24px;
+  font-weight: bolder;
 }
 
 #imgcarouselpanel {
@@ -82,7 +83,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  padding: 20px 0;
+  padding-bottom: 100px;
 }
 
 .imagecontainer {
@@ -91,6 +92,9 @@ body {
   border: 5px solid white;
   border-radius: 4px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .slides {
@@ -128,4 +132,21 @@ body {
 
 .slidebtn:hover {
   background-color: rgb(210, 10, 10);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 5px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgb(112, 128, 144);
+  background-color: rgba(112, 128, 144, 0.1);
+}
+
+.dot.show {
+  background-color: rgb(112, 128, 144);
 }

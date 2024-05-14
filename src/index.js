@@ -10,7 +10,8 @@ const dropdownHoverContent = document.querySelector("#hovercontent");
 const slideimages = document.querySelectorAll(".slides");
 const nextbtn = document.querySelector(".next");
 const previousbtn = document.querySelector(".previous");
+const dots = document.querySelectorAll(".dot");
 
 setUpClickDropdown(dropdownClick, dropdownClickContent, "show");
 setUpHoverDropdown(dropdownHover, dropdownHoverContent, "show");
-setUpImageCarousel([...slideimages], nextbtn, previousbtn, "show");
+setUpImageCarousel([...slideimages], [...dots], nextbtn, previousbtn, "show");
